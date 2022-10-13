@@ -34,7 +34,7 @@ $delete.on("click", function () {
 });
 
 //image logic
-const imageSrc3 = 'ATIKUOKOWA FM.png';
+const imageSrc3 = 'ATIKUOKOWA RADIO DP.png';
 
 let container = document.getElementById('container');
 let containerCtx = container.getContext('2d');
