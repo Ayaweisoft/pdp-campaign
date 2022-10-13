@@ -78,15 +78,15 @@ const uploadImage = (e) => {
         imageWidthDownload = 115 * mainRatio;
         imageHeightDownload = imageWidthDownload * ratio;
 
-        var imgRestoreDownload = (imageHeightDownload - 115)/2;
-        imgTopDownload = imgTopDownload - imgRestoreDownload;
+        // var imgRestoreDownload = (imageHeightDownload - 115)/2;
+        // imgTopDownload = imgTopDownload - imgRestoreDownload;
       } else {
         var ratio = imageWidthDownload / imageHeightDownload;
         imageHeightDownload = 115 * mainRatio;
         imageWidthDownload = imageHeightDownload * ratio;
 
-        var imgRestoreDownload = (imageWidthDownload - 115)/2;
-        imgLeftDownload = imgLeftDownload - imgRestoreDownload;
+        // var imgRestoreDownload = (imageWidthDownload - 115)/2;
+        // imgLeftDownload = imgLeftDownload - imgRestoreDownload;
       }
 
       //for container image
@@ -106,7 +106,7 @@ const uploadImage = (e) => {
       }
 
       console.log('imageHeightDownload = ', imageHeightDownload, 'imageWidthDownload = ', imageWidthDownload);
-      downloadCtx.drawImage(img, imgLeftDownload * mainRatio, imgTopDownload * mainRatio, imageWidthDownload, imageHeightDownload);
+      downloadCtx.drawImage(img, imgLeft * mainRatio, imgTop * mainRatio, imageWidthDownload, imageHeightDownload);
 
       console.log('imageHeight = ', imageHeight, 'imageWidth = ', imageWidth);
       console.log('imgTop = ', imgTop, 'imgLeft = ', imgLeft);
@@ -147,7 +147,6 @@ const downloadButton = document.querySelector("button")
 imageLoader.addEventListener("change", uploadImage);
 
 function download() {
-  
   downloadButton.innerHTML = "Downloading...";
   const image = containerDownload.toDataURL();
   const link = document.createElement("a");
