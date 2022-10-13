@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get your custom made PDP flyer by uploading your image." />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ATIKU / OKOWA" />
+  <meta property="og:description" content="Get your custom made PDP flyer by uploading your image." />
+  <meta property="og:image" content="ATIKU/OKOWA.png" />
+  <meta property="og:url" content="https://labourpartybayelsa.com" />
+  <meta property="og:site_name" content="PDP Bayelsa" />
+
+  <meta name="twitter:title" content="ATIKU / OKOWA">
+  <meta name="twitter:description" content="Get your custom made PDP flyer by uploading your image.">
+  <meta name="twitter:image" content="ATIKU/OKOWA.png">
+  <meta name="twitter:site" content="@oracle_codes">
+
+<meta name="twitter:creator" content="@USERNAME">
+  <title>ATIKU / OKOWA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="section">
+    <div class="heading">
+      <h1>Atiku / Okowa</h1>
+    </div>
+    <p>Get your custom made PDP flyer by uploading your image.</p>
+    <h2>Upload image below</h2>
+    <div class="file-drop-area" id="file-drop-area">
+      <span class="fake-btn" id="fake-btn">Choose files</span>
+      <span class="file-msg" id="file-msg">or drop files here</span>
+      <input class="file-input" id="uploader" type="file">
+      <div class="item-delete" id="item-delete"></div>
+    </div>
+    <div class="container">
+      <div class="cont-row">
+        <h2>Before</h2>
+        <div class="flyer-container">
+          <canvas id="preview" 
+            class="preview"
+            width="400"
+            height="400">
+          </canvas>
+        </div>
+      </div>
+      <div class="cont-row">
+        <h2>Result</h2>
+        <div class="flyer-container">
+          <canvas id="container" 
+            class="canvas"
+            width="400"
+            height="400">
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <canvas id="container-download"" 
+      class="canvas-download"
+      width="6000"
+      height="6000">
+    </canvas>
+    <button>Download</button>
+  </div>
+  <footer>
+    <p>courtesy: PDP Bayelsa State Media</p>
+    <p class="p">powered by <a href="http://ayaweisoft.com">Ayaweisoft</a> LTD</p>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>
